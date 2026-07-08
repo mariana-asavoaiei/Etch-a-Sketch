@@ -37,4 +37,4 @@ Through this project I practiced:
    ```bash
    git clone <your-repository-url>
 ```
-2. Open ```index.html``` in browser
+2. Open `index.html` in browser
