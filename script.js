@@ -10,7 +10,12 @@ function createGrid(sides) {
         div.style.width = `${squareSize}px`;
         div.style.height = `${squareSize}px`;
         div.addEventListener("mouseover", () => {
-            div.classList.add("active");
+            // div.classList.add("active");
+            let randomRed = Math.floor(Math.random() * 256);
+            let randomGreen = Math.floor(Math.random() * 256);
+            let randomBlue = Math.floor(Math.random() * 256);
+            let randomColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+            div.style.backgroundColor = randomColor;
         })
         container.appendChild(div);
     }
